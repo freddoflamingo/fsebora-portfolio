@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./About.module.css";
-import ME from "../../assets/me-about.jpg";
+import ME from "../../assets/fse-me-about.jpg";
 import { BiAward } from "react-icons/bi";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
