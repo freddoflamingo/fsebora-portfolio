@@ -1,11 +1,13 @@
 .experience__container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  width: var(--container-width-lg);
+  margin: 0 auto;
 }
 
 .experience__container > div {
   background-color: var(--color-bg-variant);
+  height: 30rem;
   padding: 2.4rem 5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
@@ -26,20 +28,22 @@
 
 .experience__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr);
   row-gap: 2rem;
 }
 
 .experience__details {
-  display: flex;
   gap: 1rem;
+  margin-bottom: 4rem;
+}
+.experience__details > div {
+  text-align: center;
 }
 
-.experience__details_icon {
-  margin-top: 6px;
-  color: var(--color-primary);
+.experience__logo_icon {
+  height: 4rem;
+  width: 4rem;
 }
-
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================*/
 @media screen and (max-width: 1024px) {
   .experience__container {

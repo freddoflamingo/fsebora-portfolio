@@ -22,7 +22,7 @@ const About = () => {
               <BiAward className={classes.about__icon} />
               <h5>Experience</h5>
               <small>
-                Execute Experience to design, optimization, and performance.
+                Optimization, Design, and Performance.
               </small>
             </article>
 
