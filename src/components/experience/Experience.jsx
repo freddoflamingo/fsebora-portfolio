@@ -102,6 +102,24 @@ const Experience = () => {
                 <h4>VSCode</h4>
               </div>
             </article>
+            <article className={classes.experience__details}>
+              <div>
+                <Icon
+                  icon="simple-icons:autodesk"
+                  className={classes.experience__logo_icon}
+                />
+                <h4>Autodesk</h4>
+              </div>
+            </article>
+            <article className={classes.experience__details}>
+              <div>
+                <Icon
+                  icon="skill-icons:photoshop"
+                  className={classes.experience__logo_icon}
+                />
+                <h4>Photoshop</h4>
+              </div>
+            </article>
           </div>
         </div>
       </div>

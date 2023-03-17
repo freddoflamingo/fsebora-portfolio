@@ -7,8 +7,8 @@
 
 .experience__container > div {
   background-color: var(--color-bg-variant);
-  height: 30rem;
-  padding: 2.4rem 5rem;
+  height: 25rem;
+  padding: 2.4rem 3rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
@@ -28,7 +28,7 @@
 
 .experience__content {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   row-gap: 2rem;
 }
 
@@ -41,8 +41,8 @@
 }
 
 .experience__logo_icon {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
 }
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================*/
 @media screen and (max-width: 1024px) {
@@ -51,14 +51,24 @@
   }
 
   .experience__container > div {
-    width: 80%;
+    width: 100%;
     padding: 2rem;
     margin: 0 auto;
+    height: 42rem;
   }
 
   .experience__content {
     padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.experience__details {
+  margin-bottom: 2rem;
+}
+
+.experience__details > div > h4 {
+  font-size: 1rem;
 }
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) ==================*/
@@ -67,8 +77,18 @@
     gap: 1rem;
   }
 
+  .experience__logo_icon {
+    height: 2rem;
+    width: 2rem;
+  }
+
   .experience__container > div {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 0.05rem;
+    height: 38rem;
   }
+}
+
+.experience__details > div > h4 {
+  font-size: 0.8rem;
 }

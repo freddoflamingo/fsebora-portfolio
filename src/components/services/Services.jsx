@@ -9,25 +9,6 @@ const Services = () => {
       <h5>What I Offer</h5>
       <h2>Services</h2>
       <div className={`container ${classes.services__container}`}>
-        <article className={`${classes.service} ${classes.service1}`}>
-          <div className={classes.service__head}>
-            <h3>DATA ANALYSIS</h3>
-          </div>
-          <ul className={classes.service__list}>
-            <li>
-              <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-            </li>
-            <li>
-              <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-            </li>
-            <li>
-              <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
-            </li>
-          </ul>
-        </article>
         {/* END OF DATA ANALYSIS */}
         <article className={classes.service}>
           <div className={classes.service__head}>
@@ -36,15 +17,18 @@ const Services = () => {
           <ul className={classes.service__list}>
             <li>
               <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+              <p>Transforming design into reality.</p>
             </li>
             <li>
               <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+              <p> Creating integrative front-end with modern technologies.</p>
             </li>
             <li>
               <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+              <p>
+                API Integrations to enable software to connect with other
+                platforms.
+              </p>
             </li>
           </ul>
         </article>
@@ -56,15 +40,23 @@ const Services = () => {
           <ul className={classes.service__list}>
             <li>
               <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+              <p>
+                Writing effective script according to requirements in python.
+              </p>
             </li>
             <li>
               <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+              <p>
+                Web and data scraping using frameworks such as Selenium or
+                BeautifulSoup.
+              </p>
             </li>
             <li>
               <BiCheck className={classes.service__list_icon} />
-              <p>Lorem ipsum dolor sit amet, consectetur elit.</p>
+              <p>
+                Extracting meaningful Data from Raw data, documents(PDF, Excel
+                sheets, CSV, etc.) and websites.
+              </p>
             </li>
           </ul>
         </article>

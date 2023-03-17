@@ -1,6 +1,6 @@
 .services__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
 }
 
@@ -8,7 +8,7 @@
   background: var(--color-bg-variant);
   border-radius: 0 0 2rem 2rem;
   border: 1px solid var(--color-primary);
-  height: fit-content;
+  height: 100%;
   transition: var(--transition);
 }
 
@@ -53,13 +53,8 @@
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ==================*/
 @media screen and (max-width: 1024px) {
   .services__container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "service3 service3";
-    gap: 2rem;
-  }
-
-  .service1 {
-    grid-area: service3;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .service {
@@ -69,13 +64,4 @@
 
 /* ============= MEDIA QUERIES (SMALL DEVICES) ==================*/
 @media screen and (max-width: 600px) {
-  .services__container {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    grid-template-areas: initial;
-  }
-  .service1 {
-    grid-area: auto;
-    gap: 1.5rem;
-  }
 }
