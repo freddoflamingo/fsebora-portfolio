@@ -7,25 +7,21 @@ import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
+  const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_61ql2yq",
-        "template_g5fpw1t",
-        form.current,
-        "4EEuelHegwO8NuY-W"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
 
     e.target.reset();
   };
@@ -39,8 +35,8 @@ const Contact = () => {
           <article className={classes.contact__option}>
             <MdOutlineMail className={classes.contact__option_icon} />
             <h4>Email</h4>
-            <h5>mfrederickebora@gmail.com</h5>
-            <a href="mailto:mfrederickebora@gmail.com">Send A Message</a>
+            <h5>ar.fredebora@gmail.com</h5>
+            <a href="mailto:ar.fredebora@gmail.com">Send A Message</a>
           </article>
           <article className={classes.contact__option}>
             <RiMessengerLine className={classes.contact__option_icon} />
