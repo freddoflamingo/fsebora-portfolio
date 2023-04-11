@@ -1,3 +1,3 @@
-# react website project
+# Frederick Ebora Portfolio Website
 
-This is my first react website portfolio.
+This is my personal Website made with Javascript React.
